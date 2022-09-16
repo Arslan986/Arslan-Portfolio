@@ -1,0 +1,744 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+/*8888888888888 navbar start 88888888888888*/
+#hamburgericon {
+  background-color: #f9004d;
+  color: white;
+}
+
+nav {
+  background-color: black;
+}
+
+nav ul li {
+  padding: 20px;
+}
+
+#navfont {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#navfonthover {
+  color: #f9004d;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#navfont:hover {
+  color: #f9004d;
+  font-weight: bold;
+}
+
+#navfontone {
+  color: #f9004d;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#navfontones {
+  color: #f9004d;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+#navfonttwo {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/*8888888888888 navbar close 88888888888888*/
+/*8888888888888 main content start 88888888888888*/
+.main {
+  height: 90vh;
+  width: 100%;
+}
+
+#profile
+{
+  height: 450px;
+  width: 100%; 
+}
+
+
+#one {
+  height: 500px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+#two {
+  height: 500px;
+  background-color: black;
+  text-align: center;
+  align-items: center;
+}
+
+#hello {
+  color: cyan;
+}
+
+#name {
+  color: white;
+  font-size: 45px;
+}
+
+#developer {
+  color: white;
+  font-size: 30px;
+  font-family: 'Grape Nuts', cursive;
+}
+
+@font-face {
+  font-family: Clip;
+  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  background-image: radial-gradient(ellipse 50% 35% at 50% 50%,
+      #6b1839,
+      transparent);
+  letter-spacing: 2;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*8888888888888 main content close 88888888888888*/
+/*8888888888888 about section content start 88888888888888*/
+.secondmain{
+     background-color: #191919;
+     align-items: center;
+     display: flex;
+}
+#parentone{
+  align-items: center;
+}
+#childone{
+  height: 600px;
+  width: 100%;
+}
+#large{
+  font-size: 70px;
+  color: white;
+  font-weight: bold;
+}
+#medium{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Grape Nuts', cursive;
+}
+#small{
+  font-size: 20px;
+  color: white;
+  text-align: justify;
+  font-family: 'Ubuntu', sans-serif;
+}
+#second{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#spanone{
+  font-size: 30px;
+  color: #f9004d;
+  font-family: 'Grape Nuts', cursive;
+}
+#letstalk{
+  height: 50px;
+  width: 150px;
+  background-color: #f9004d;
+  border: 4px solid #f9004d;
+  overflow: hidden;
+  font-weight: bold;
+  color: white;
+}
+#letstalk:hover{
+  border-radius: 20px;
+  font-size: 20px;
+}
+/*8888888888888 about section content close 88888888888888*/
+/*8888888888888 our services section content start 88888888888888*/
+.thirdmain{
+  height: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#childfive{
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+}
+#childsix{
+  height: 400px;
+  background-color: #191919;
+  border: 2px solid #191919;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#socialone{
+  font-size: 60px;
+  color: #f9004d;
+}
+#heading{
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+   
+}
+#headingchild{
+  font-size: 40px;
+  color: #f9004d;
+  font-weight: bold;
+
+}
+#smallest{
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+/*8888888888888 our services section content close 88888888888888*/
+/*8888888888888 skills section content start 88888888888888*/
+.skills{
+  background-color: #191919;
+  align-items: center;
+  text-align: center;
+
+}
+#skillsp{
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+}
+#skillone{
+  height: 200px; 
+   
+}
+#skilltwo{
+  height: 200px; 
+  
+}
+#skillthree{
+  height: 200px; 
+  
+}
+#skillfour{
+  height: 200px; 
+  
+}
+#skillfive{
+  height: 200px; 
+  
+}
+#skillsix{
+  height: 200px; 
+  
+}
+#skillimgone{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+#skillimgtwo{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+#skillimgthree{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+#skillimgfour{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+#skillimgfive{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+#skillimgsix{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+#skillspone{
+  font-size: 30px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+/*8888888888888 skills section content close 88888888888888*/
+/*8888888888888 contact us section content start 88888888888888*/
+#contactus{
+
+  background-color: black;
+}
+#contactusp{
+  font-size: 70px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+#contactsubmit{
+  height: 50px;
+  width: 150px;
+  background-color: #f9004d;
+  border: 4px solid #f9004d;
+  overflow: hidden;
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#contactsubmit:hover{
+  border-radius: 20px;
+  font-size: 20px;
+}
+textarea{
+  resize: none;
+}
+/*8888888888888 contact us section content close 88888888888888*/
+/*8888888888888 new ver  section content start 88888888888888*/
+.fourmain{
+  height: 250px;
+  width: 100%;
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+
+}
+#fourmainfirstchild{
+  color: white;
+  font-size: 40px;
+
+}
+#fourmainbutton{
+  height: 50px;
+  width: 150px;
+  background-color: #f9004d;
+  border: 4px solid #f9004d;
+  overflow: hidden;
+  color: white;
+  font-weight: bold;
+}
+#fourmainbutton:hover{
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+/*8888888888888  new ver section content close 88888888888888*/
+/************* footer start *************/
+.footermainbox{
+  background-color: #222222;
+  height: 400px;
+  width: 100%;
+}
+#firstbox{
+  height: 200px;
+  background-color: #1E1E1E;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+#secondbox{
+  height: 200px;
+  background-color: #1C1C1C;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#thirdbox{
+  height: 200px;
+  background-color: #252525;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#socialicons{
+  color: white;
+  font-size: 40px;
+}
+.onep{
+  color: white;
+  padding-top: 20px;
+  text-align: right;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+}
+.onep:hover{
+  color: #f9004d;
+}
+.onep a{
+color: white;
+ text-decoration: none;
+ cursor: pointer;
+}  
+.onep a:hover{
+  color: #f9004d;
+} 
+#bgfooter{
+  border-radius: calc(100%);
+  height: 50px;
+  width: 50px;
+  color: white;
+  font-size: 40px;
+  background-color: #f9004d;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#hr{
+  color: white;
+  background-color: white;
+}
+#footerlastp{
+  color: white;
+}
+#floatproperty{
+  color: white;
+  float: right;
+  padding-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+/************* footer end *************/
+@media screen and (max-width: 992px) {
+  .main {
+      height: 1000px;
+    }
+    #one{
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      height: 400px;
+    }
+    .secondmain{
+      height: 1200px;
+    }
+    #childone{
+      height: 500px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .footermainbox {
+        height: 900px;
+        background-color: #222222;
+      }
+      .main{
+        height: 700px;
+      }
+      #one{
+        height: 200px;
+      }
+      #two{
+        height: 200px;
+      }
+      #profile{
+        height: 400px;
+      }
+      .secondmain{
+        height: 700px;
+      }
+      #childone{
+        height: 250px;
+      }
+      #large{
+          font-size: 28px;
+      }
+      #medium{
+           font-size: 24px;
+      }
+      #small{
+           font-size: 15px;
+      }
+    }
+    @media screen and (max-width: 394px) {
+    #childsix{
+         height: 450px;
+    }
+    .thirdmain{
+      height: 800px;
+      text-align: center;
+    }
+    #letstalk{
+      margin-top: -40px;
+      height: 40px;
+    }
+  }
+  @media screen and (max-width: 575px) {
+  #unique1{
+    padding: 0px 15px;
+  }
+  #childsix{
+    padding: 0px 10px;
+  }
+  #nick1{
+    padding: 0px 35px;
+    height: 500px;
+  }
+  #childfive{
+    font-size: 50px;
+  }
+  #heading,#headingchild{
+    font-size: 34px;
+  }
+  }
+
+  @media screen and (max-width: 479px) {
+    #Hello{
+      font-size: 18px;
+    }
+    #name{
+      font-size: 25px;
+    }
+    #developer{
+      font-size: 18px;
+    }
+    #navfontones{
+      font-size: 25px;
+    }
+  
+  }
+  @media screen and (max-width: 391px) {
+    .thirdmain{
+      height: 600px;
+    }
+   }
+   @media screen and (max-width: 391px) {
+    .thirdmain{
+      height: 650px;
+    }
+    #smallest{
+      font-size: 20px;
+    }
+   }
+  @media screen and (max-width: 314px) {
+   .secondmain{ height: 800px;
+   }
+  }
+
